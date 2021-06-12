@@ -20,7 +20,7 @@ public class MapServiceApplication {
             mapRepository.save(new Geolocation(2,"Chittagong", 22.341900, 91.815536));
             mapRepository.save(new Geolocation(3,"Khulna", 22.845641, 89.540328));
             mapRepository.save(new Geolocation(4,"Mymensingh", 24.743448, 90.398384));
-            mapRepository.save(new Geolocation(5,"Gazipur", 23.999941, 90.420273));
+            mapRepository.save(new Geolocation(5,"Rajshahi", 24.3745, 88.6042));
         };
     }
 }
