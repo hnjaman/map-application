@@ -1,0 +1,87 @@
+map-service/.mvn
+
+mvnw
+*.cmd
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+offer-service/.mvn/*
+product-service/.mvn/*
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+
+### angular ### 
+# compiled output
+/map-service-ui/dist
+/map-service-ui/tmp
+/map-service-ui/out-tsc
+# Only exists if Bazel was run
+/map-service-ui/bazel-out
+
+# dependencies
+/map-service-ui/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/map-service-ui/.sass-cache
+/map-service-ui/connect.lock
+/map-service-ui/coverage
+/map-service-ui/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/map-service-ui/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
