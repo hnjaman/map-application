@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins="http://localhost:3000", allowedHeaders="*")
+@RequestMapping("/api/")
 public class MapController {
     private MapService mapService;
 

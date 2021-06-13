@@ -13,6 +13,6 @@ export class MapService {
   ) { }
 
   getGeolocation(): any {
-    return this.http.get(host+"/maps", { observe: 'response' })
+    return this.http.get(host+"/api/maps", { observe: 'response' })
   }
 }
