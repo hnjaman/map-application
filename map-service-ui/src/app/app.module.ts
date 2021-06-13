@@ -7,6 +7,7 @@ import { MapComponent } from './map/map.component';
 import { HomeComponent } from './home/home.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDOX4VFz130IisVNp4ZXQYSrUSZBLRRcns'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

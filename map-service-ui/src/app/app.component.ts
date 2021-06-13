@@ -12,7 +12,6 @@ export class AppComponent implements OnInit {
 
   title = 'Google Map Service';
 
-  // private map: google.maps.Map
 
   ngOnInit(): void {
     // let loader = new Loader({
