@@ -5,7 +5,8 @@ import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'map', component: MapComponent }
+  { path: 'map', component: MapComponent },
+  { path: "**", redirectTo: "/home" }
 ];
 
 @NgModule({
