@@ -10,21 +10,22 @@ import { MapService } from './map.service';
 export class MapComponent implements OnInit {
 
   title = 'Google Map Service';
-  latitude = 23.8103;
-  longitude = 90.4125;
+  latitude = 23.8103; longitude = 90.4125;  // Dhaka Geolocation for center in the map
 
-  selectedMarker = null;
-
-  markers: Geolocation[];
+  geolocations: Geolocation[];
+  geolocation = null;
 
   constructor(public mapService: MapService) { }
 
   ngOnInit(): void {
     this.mapService.getGeolocation().subscribe((data) => {
-      debugger;
-      this.markers = data.body;
+      this.geolocations = data.body;
     }, (err) => {
       console.log(err.error);
     });
+  }
+
+  selectedMarkerDristrict(event) {
+    this.geolocation = this.geolocations.find( ({ latitude, longitude }) => latitude === event.latitude && longitude === event.longitude );
   }
 }

@@ -1,8 +1,10 @@
-<nav>
-    <a routerLink="/home">Home</a>
-    <br>
-    <a routerLink="/map">Map</a>
-</nav>
-<router-outlet></router-outlet> 
+<div class="left-menu">
+    <nav>
+        <a routerLink="/home">Home</a>
+        <a routerLink="/map">Map</a>
+    </nav>
+</div>
 
-<!-- <app-map></app-map> -->
+<div class="content">
+    <router-outlet></router-outlet> 
+</div>
